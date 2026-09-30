@@ -1,6 +1,6 @@
 # ketch-registry
 
-The default package registry for [ketch](https://github.com/listepo/ketch).
+The default package registry for [ketch](https://github.com/pyrlyn/ketch).
 
 Every top-level folder is a package and holds one `ketch.toml` describing it.
 The folder name *is* the package name — it is what `ketch install <name>`
@@ -35,9 +35,9 @@ asset, a binary worth linking under a different name, an `.app` bundle, or a
 short alias worth remembering.
 
 The full schema is
-[docs/MANIFESTS.md](https://github.com/listepo/ketch/blob/main/docs/MANIFESTS.md);
+[docs/MANIFESTS.md](https://github.com/pyrlyn/ketch/blob/main/docs/MANIFESTS.md);
 the layout and validation rules are
-[docs/REGISTRY.md](https://github.com/listepo/ketch/blob/main/docs/REGISTRY.md).
+[docs/REGISTRY.md](https://github.com/pyrlyn/ketch/blob/main/docs/REGISTRY.md).
 
 ## Trying an entry before sending it
 

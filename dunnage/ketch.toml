@@ -2,7 +2,7 @@
 #
 # Inference from github:listepo/dunnage already works; this file is what
 # `ketch push` sends to the registry and what docs / `ketch info` show.
-# Schema: listepo/ketch docs/MANIFESTS.md.
+# Schema: pyrlyn/ketch docs/MANIFESTS.md.
 
 name = "dunnage"
 source = "github:listepo/dunnage"
