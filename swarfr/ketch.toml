@@ -1,13 +1,13 @@
-# dunnage as a ketch package.
+# swarfr as a ketch package.
 #
-# Inference from github:listepo/dunnage already works; this file is what
+# Inference from github:listepo/swarfr already works; this file is what
 # `ketch push` sends to the registry and what docs / `ketch info` show.
 # Schema: pyrlyn/ketch docs/MANIFESTS.md.
 
-name = "dunnage"
-source = "github:listepo/dunnage"
+name = "swarfr"
+source = "github:listepo/swarfr"
 description = "Shrink Cargo target directories without slowing builds"
-homepage = "https://github.com/listepo/dunnage"
+homepage = "https://github.com/listepo/swarfr"
 
 # Prefer platform archives dist publishes; skip self-updater sidecars, the
 # installer script, the Homebrew formula and the source tarball so scoring
