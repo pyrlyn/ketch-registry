@@ -9,6 +9,10 @@ source = "github:listepo/swarfr"
 description = "Shrink Cargo target directories without slowing builds"
 homepage = "https://github.com/listepo/swarfr"
 
+# The project was called dunnage until v0.1.0. Keep that name resolving so
+# `ketch install dunnage` and scripts written before the rename still work.
+provides = ["dunnage"]
+
 # Prefer platform archives dist publishes; skip self-updater sidecars, the
 # installer script, the Homebrew formula and the source tarball so scoring
 # cannot pick those by mistake.
