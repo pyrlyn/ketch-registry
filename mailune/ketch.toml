@@ -1,0 +1,17 @@
+# Mailune, as a ketch package.
+#
+# macOS arm64 only. The payload is the Mailune.app bundle inside the
+# aarch64 DMG. There is no Intel asset. Schema: pyrlyn/ketch docs/MANIFESTS.md.
+
+name = "mailune"
+source = "github:pyrlyn/mailune"
+description = "Local-first mail client"
+homepage = "https://github.com/pyrlyn/mailune"
+kind = "app"
+
+[asset]
+include = ["*aarch64*.dmg"]
+exclude = ["*x86_64*", "*intel*", "*.sha256"]
+
+[asset.target]
+"macos-aarch64" = "*aarch64*.dmg"
