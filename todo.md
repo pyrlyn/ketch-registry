@@ -1,6 +1,6 @@
 - T1. swarfr installs the wrong command name
 - T2. runa entry points at a repo with zero releases
-- T3. Re-push the stale ketch manifest
+- T3. Re-push the stale the package manager manifest
 - T4. Restore the `#:schema` directive on all manifests
 - T5. Fix wrong excludes and standardize the dist exclude block
 - T6. Ship ripgrep completions and man page

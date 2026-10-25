@@ -1,9 +1,9 @@
-# cox as a ketch package.
+# The coding agent as a package manager package.
 #
 # Inference from github:pyrlyn/cox already picks the `cox-<target>.tar.xz`
-# assets scripts/package.sh publishes; this file is what `ketch push` sends
-# to the registry (pyrlyn/ketch-registry, folder `cox/`) and what docs /
-# `ketch info` show. Schema: pyrlyn/ketch docs/MANIFESTS.md.
+# assets scripts/package.sh publishes; this file is what `the package manager push` sends
+# to the registry (pyrlyn/pkgmgr-registry, folder `the coding agent/`) and what docs /
+# `the package manager info` show. Schema: pyrlyn/ketch docs/MANIFESTS.md.
 
 name = "cox"
 source = "github:pyrlyn/cox"

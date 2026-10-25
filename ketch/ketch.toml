@@ -1,7 +1,7 @@
-# ketch, as a ketch package.
+# The package manager, as a package manager package.
 #
-# This is the file `ketch push` sends to the registry (pyrlyn/ketch-registry,
-# folder `ketch/`), and what `ketch self install` resolves through once it is
+# This is the file `the package manager push` sends to the registry (pyrlyn/pkgmgr-registry,
+# folder `the package manager/`), and what `the package manager self install` resolves through once it is
 # there. It must stay in step with the entry in src/builtin.toml, which serves
 # the same purpose for a machine that has not fetched the registry yet.
 # Schema: docs/MANIFESTS.md.

@@ -1,4 +1,4 @@
-# Mailune, as a ketch package.
+# Mailune, as a package manager package.
 #
 # macOS arm64 only. The payload is the Mailune.app bundle inside the
 # aarch64 DMG. There is no Intel asset. Schema: pyrlyn/ketch docs/MANIFESTS.md.
