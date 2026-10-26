@@ -1,7 +1,7 @@
-# swarfr as a ketch package.
+# swarfr as a package manager package.
 #
 # Inference from github:listepo/swarfr already works; this file is what
-# `ketch push` sends to the registry and what docs / `ketch info` show.
+# `the package manager push` sends to the registry and what docs / `the package manager info` show.
 # Schema: pyrlyn/ketch docs/MANIFESTS.md.
 
 name = "swarfr"
@@ -10,7 +10,7 @@ description = "Shrink Cargo target directories without slowing builds"
 homepage = "https://github.com/listepo/swarfr"
 
 # The project was called dunnage until v0.1.0. Keep that name resolving so
-# `ketch install dunnage` and scripts written before the rename still work.
+# `the package manager install dunnage` and scripts written before the rename still work.
 provides = ["dunnage"]
 
 # Prefer platform archives dist publishes; skip self-updater sidecars, the

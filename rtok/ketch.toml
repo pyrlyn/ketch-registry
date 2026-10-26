@@ -1,7 +1,7 @@
-# rtok as a ketch package.
+# The token CLI as a package manager package.
 #
 # Inference from github:pyrlyn/rtok already works; this file is what
-# `ketch push` sends to the registry and what docs / `ketch info` show.
+# `the package manager push` sends to the registry and what docs / `the package manager info` show.
 # Schema: pyrlyn/ketch docs/MANIFESTS.md.
 
 name = "rtok"
@@ -9,11 +9,11 @@ source = "github:pyrlyn/rtok"
 description = "Reduce the context AI coding agents must carry"
 homepage = "https://github.com/pyrlyn/rtok"
 
-# Only the CLI. The release zip also ships `plugins/` for `rtok agent setup`;
+# Only the CLI. The release zip also ships `plugins/` for `the token CLI agent setup`;
 # without an explicit `bin`, Windows auto-discovery treats
 # `plugins/cursor/scripts/mcp.cmd` (and `mcp.sh`) as installable binaries and
-# copies them into `~/.ketch/bin`, which then breaks upgrades.
-# Path glob matches `rtok` (Unix) and `rtok.exe` (Windows).
+# copies them into `~/.pkgmgr/bin`, which then breaks upgrades.
+# Path glob matches the token CLI (Unix) and `the token CLI.exe` (Windows).
 bin = [{ path = "rtok*", name = "rtok" }]
 
 # Prefer platform archives dist publishes; skip self-updater sidecars and
