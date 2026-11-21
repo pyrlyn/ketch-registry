@@ -16,12 +16,14 @@ homepage = "https://github.com/pyrlyn/rtok"
 # Path glob matches the token CLI (Unix) and `the token CLI.exe` (Windows).
 bin = [{ path = "rtok*", name = "rtok" }]
 
-# Prefer platform archives dist publishes; skip self-updater sidecars and
-# the source tarball so scoring cannot pick those by mistake.
+# Prefer the Kotlin/Native platform archives current releases publish
+# (`rtok-<tag>-macosArm64.tar.gz`, `rtok-<tag>-linuxX64.tar.gz`). ketch 0.0.3
+# scores those packed names as macos-arm64 and linux-x64. Skip self-updater
+# sidecars, the source tarball and checksum lists so scoring cannot pick
+# those by mistake. No Windows asset has been published on v0.18.0-alpha.1–4.
 [asset]
 include = [
-  "*-apple-darwin.tar.xz",
-  "*-linux-gnu.tar.xz",
-  "*-pc-windows-msvc.zip",
+  "*-macosArm64.tar.gz",
+  "*-linuxX64.tar.gz",
 ]
-exclude = ["*-update*", "source.tar.gz"]
+exclude = ["*-update*", "source.tar.gz", "SHA256SUMS", "*.sha256"]
